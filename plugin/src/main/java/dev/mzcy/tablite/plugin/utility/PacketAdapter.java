@@ -10,7 +10,7 @@ import net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket.Act
 import net.minecraft.network.protocol.game.ClientboundTabListPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.GameType;
-import org.bukkit.craftbukkit.v1_21_4.entity.CraftPlayer;
+import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import java.util.EnumSet;
@@ -46,6 +46,8 @@ public class PacketAdapter {
                                 ping,
                                 GameType.SURVIVAL,
                                 Component.literal(profile.getName()),
+                                false,
+                                index,
                                 null
                         )
                 )
