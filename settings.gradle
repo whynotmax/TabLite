@@ -1,0 +1,4 @@
+rootProject.name = 'TabLite'
+include 'api'
+include 'plugin'
+
